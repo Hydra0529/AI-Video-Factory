@@ -1,3 +1,13 @@
+# AI Short-Video Factory
+
+Turns one sentence, or a short story, into a clip of up to about one minute. A Qwen director breaks the story into shots and a time budget. Wan2.2 renders each shot from a still frame. FastAPI and Celery return a pickup code immediately, so the page does not wait on the GPU.
+
+Internship project at the Institute of Automation, Chinese Academy of Sciences. Prompt checks and the unit tests run without a GPU. Rendering the 14B model needs a CUDA machine and a DashScope key in `.env`.
+
+![Studio page](docs/screenshots/studio.png)
+
+---
+
 # AI 电影工厂
 
 输入一句话或一段故事，系统自动分镜、生成首帧、逐镜图生视频并拼接，产出最长约一分钟的短片。镜数按主题复杂度或指定时长分配，大约 3 到 12 镜，每镜约 5 秒。
