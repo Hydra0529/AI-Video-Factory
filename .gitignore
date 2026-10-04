@@ -1,0 +1,48 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+.idea/
+.gradio/
+.cursor/
+.agents/
+.scratch/
+
+# 本地对照帧、导出草稿，不进仓库
+_compare_frames/
+_frame_review/
+_s1_frames/
+_old_*
+_new_clean.txt
+_docx_*
+_dump_*
+_extract_*
+_jul20*
+*.mp4
+*.safetensors
+*.pt
+*.ckpt
+
+output_clips/
+final_videos/
+outputs/
+
+# 文档导出草稿和一次性改稿脚本，正文以 README / TECH_STACK.md 为准
+*.doc
+*.docx
+_update_tech_doc.py
+update_tech_stack_*.py
+generate_tech_stack_docx.py
+
+# 角色参考图由 download_character_assets.sh 下载
+character_assets/manual/*.jpg
+character_assets/manual/*.png
+
+# 本地协作笔记
+AGENTS.md
+docs/agents/
+docs/adr/
